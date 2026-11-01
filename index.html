@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نیوز آرٹیکل 1 | News Article 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Source+Serif+4:wght@600;700&display=swap">
+<style>
+:root{--bg:#f6f7f3;--card:#fff;--ink:#16211c;--mute:#5d6b64;--line:#dde3dc;--brand:#0b5d3b;--brand-ink:#fff;--alert:#c8342b;--soft:#e6efe8;
+--ur:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Noto Naskh Arabic",serif;--en:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"Source Serif 4",Georgia,serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1512;--card:#17211c;--ink:#e8efe9;--mute:#9fb0a6;--line:#27352d;--brand:#3fb97f;--brand-ink:#06150d;--alert:#ef6b61;--soft:#1d2b24;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1512;--card:#17211c;--ink:#e8efe9;--mute:#9fb0a6;--line:#27352d;--brand:#3fb97f;--brand-ink:#06150d;--alert:#ef6b61;--soft:#1d2b24;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--en);transition:background .3s,color .3s}
+body.ur{font-family:var(--ur);line-height:2.1}
+body.ur .hd,body.ur h1,body.ur h2,body.ur h3{font-family:var(--ur);line-height:2}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header.top{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.5rem;color:var(--brand);margin-inline-end:auto;text-decoration:none}
+body.ur .logo{font-family:var(--ur);font-size:1.4rem}
+.tools{display:flex;gap:8px;align-items:center}
+.tbtn{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:6px 14px;font-size:.9rem;font-family:var(--en)}
+.tbtn:hover{border-color:var(--brand)}
+.search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 14px;min-width:160px;font:inherit;font-size:.9rem}
+.social{display:flex;gap:6px;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font:600 .8rem var(--en);padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card)}
+.social a i{font-style:normal;display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;color:#fff;font-size:.7rem}
+.social a:hover{border-color:var(--brand)}
+nav.cats{display:flex;gap:6px;overflow-x:auto;padding:8px 0 10px;scrollbar-width:thin}
+nav.cats button{white-space:nowrap;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 16px;font-weight:600}
+nav.cats button[aria-current="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.ticker{background:var(--alert);color:#fff;display:flex;align-items:center;overflow:hidden}
+.ticker b{padding:6px 14px;background:rgba(0,0,0,.25);white-space:nowrap}
+.tk{overflow:hidden;flex:1}
+.tk div{display:inline-block;white-space:nowrap;padding:6px 0;animation:tk 45s linear infinite}
+.tk span{margin:0 28px}
+@keyframes tk{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+[dir=ltr] .tk div{animation-name:tkl}
+@keyframes tkl{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.tk div{animation:none}}
+.note{background:var(--soft);border:1px dashed var(--brand);border-radius:8px;padding:8px 14px;margin:16px 0;font-size:.85rem;color:var(--mute)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;padding:8px 0 32px}
+@media (max-width:860px){.layout{grid-template-columns:1fr}.search{flex:1}}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+@media (max-width:640px){.hero{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.img{aspect-ratio:16/9;display:grid;place-items:center;color:#fff;font:700 2.4rem var(--en);background:linear-gradient(135deg,var(--c1),var(--c2))}
+.big .img{aspect-ratio:16/10}
+.cb{padding:12px 14px 14px}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;color:var(--brand);margin-bottom:2px}
+h3{margin:0 0 6px;font-size:1.05rem;line-height:1.5}
+.big h3{font-size:1.5rem;font-family:var(--serif)}
+body.ur .big h3{font-family:var(--ur)}
+.sum{margin:0 0 8px;color:var(--mute);font-size:.9rem}
+.meta{font-size:.78rem;color:var(--mute);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.share{display:flex;gap:6px;margin-top:8px}
+.share button{border:1px solid var(--line);background:none;border-radius:6px;padding:2px 9px;font:600 .72rem var(--en)}
+.share button:hover{background:var(--soft)}
+.side{display:flex;flex-direction:column;gap:16px}
+.sec{margin-top:28px}
+.sec header{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--brand);margin-bottom:12px}
+.sec h2{margin:0;font-size:1.2rem}
+.more{border:0;background:none;color:var(--brand);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.panel h2{margin:0 0 8px;font-size:1.1rem}
+.pop{list-style:none;margin:0;padding:0;counter-reset:p}
+.pop li{display:flex;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:.92rem;cursor:pointer}
+.pop li::before{counter-increment:p;content:counter(p);font:700 1.1rem var(--serif);color:var(--brand);min-width:1.2em}
+.nl{display:flex;gap:6px}
+.nl input{flex:1;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:8px;font:inherit}
+.nl button{border:0;background:var(--brand);color:var(--brand-ink);border-radius:8px;padding:8px 14px;font-weight:700}
+.ad{border:1px dashed var(--line);border-radius:10px;min-height:120px;display:grid;place-items:center;color:var(--mute);font-size:.8rem}
+footer{background:var(--card);border-top:1px solid var(--line);padding:22px 0;font-size:.9rem;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.links{display:flex;gap:14px;flex-wrap:wrap}
+.empty{padding:40px 0;text-align:center;color:var(--mute)}
+#toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 18px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;font-family:var(--en)}
+#toast.on{opacity:1}
+</style>
+</head>
+<body class="ur">
+<header class="top"><div class="wrap">
+ <div class="bar">
+  <a class="logo" href="#" data-i="logo">نیوز آرٹیکل 1</a>
+  <div class="social" id="soc"></div>
+  <div class="tools">
+   <input class="search" id="q" type="search" data-ph="search" aria-label="search">
+   <button class="tbtn" id="lang" aria-label="Language">English</button>
+   <button class="tbtn" id="theme" aria-label="Theme">🌙</button>
+  </div>
+ </div>
+ <nav class="cats" id="cats" aria-label="categories"></nav>
+</div></header>
+<div class="ticker"><b data-i="brk">بریکنگ نیوز</b><div class="tk"><div id="tk"></div></div></div>
+<main class="wrap">
+ <div class="note" id="note" data-i="note"></div>
+ <div class="layout">
+  <section id="main" aria-live="polite"></section>
+  <aside class="side">
+   <div class="panel"><h2 data-i="pop">سب سے زیادہ پڑھی گئی</h2><ol class="pop" id="pop"></ol></div>
+   <div class="panel"><h2 data-i="nlh">نیوز لیٹر</h2><div class="nl"><input id="em" type="email" data-ph="email" aria-label="email"><button id="sub" data-i="sub">سبسکرائب</button></div></div>
+   <div class="ad">Ad space / اشتہار</div>
+  </aside>
+ </div>
+</main>
+<footer><div class="wrap">
+ <div class="links"><a href="#" data-i="about">ہمارے بارے میں</a><a href="#" data-i="contact">رابطہ</a><a href="#" data-i="priv">پرائیویسی پالیسی</a></div>
+ <div class="social" id="soc2"></div>
+ <div>© 2026 News Article 1</div>
+</div></footer>
+<div id="toast" role="status"></div>
+<script>
+var T={ur:{logo:"نیوز آرٹیکل 1",brk:"بریکنگ نیوز",search:"خبریں تلاش کریں…",email:"آپ کا ای میل",pop:"سب سے زیادہ پڑھی گئی",nlh:"نیوز لیٹر",sub:"سبسکرائب",about:"ہمارے بارے میں",contact:"رابطہ",priv:"پرائیویسی پالیسی",more:"مزید دیکھیں",none:"کوئی خبر نہیں ملی۔",src:"ذریعہ",copied:"لنک کاپی ہو گیا",thanks:"شکریہ، آپ سبسکرائب ہو گئے",note:"یہ ڈیمو صفحہ ہے اور خبریں نمونے کی ہیں۔ اصل ویب سائٹ میں یہ جگہ RSS فیڈز سے خودکار بھری جائے گی۔",copy:"کاپی",now:"ابھی ابھی",m:"منٹ پہلے",h:"گھنٹے پہلے"},
+en:{logo:"News Article 1",brk:"BREAKING",search:"Search news…",email:"Your email",pop:"Most read",nlh:"Newsletter",sub:"Subscribe",about:"About us",contact:"Contact",priv:"Privacy policy",more:"See more",none:"No stories found.",src:"Source",copied:"Link copied",thanks:"Thanks, you are subscribed",note:"This is a demo page with sample stories. On the live site this area is filled automatically from RSS feeds.",copy:"Copy",now:"Just now",m:"min ago",h:"h ago"}};
+var CATS=[["home","ہوم","Home"],["pakistan","پاکستان","Pakistan"],["national","نیشنل نیوز","National"],["intl","انٹرنیشنل نیوز","International"],["sports","سپورٹس","Sports"],["ent","انٹرٹینمنٹ","Entertainment"],["biz","بزنس","Business"],["tech","ٹیکنالوجی","Technology"],["health","صحت","Health"],["edu","تعلیم","Education"]];
+var COL={pakistan:["#0b5d3b","#2e9e6a"],national:["#1f5f8b","#4aa3d6"],intl:["#5b3a8c","#9b7bd6"],sports:["#b4531a","#f0a04b"],ent:["#a3306b","#e56aa5"],biz:["#2f6b6b","#6bc2b8"],tech:["#2c3e91","#6d86f0"],health:["#2e7d4f","#8fd3a3"],edu:["#8a6d1c","#e0c15a"]};
+var A=[
+["pakistan","ملک بھر میں موسم کی نئی لہر، محکمہ موسمیات کا الرٹ جاری","Nationwide weather spell expected, met office issues alert","Light to moderate rain is forecast in several regions over the next two days.","پی ایم ڈی",25],
+["pakistan","شہری ٹرانسپورٹ کے نئے روٹس کی منظوری","New urban transport routes approved","Officials say the routes will cut average commute times in major cities.","نمونہ",70],
+["national","صوبائی بجٹ پر مشاورت کا اگلا دور کل ہوگا","Next round of provincial budget talks set for tomorrow","Stakeholders will present their proposals to the finance committee.","نمونہ",110],
+["national","تعلیمی بورڈز کے نتائج کا شیڈول جاری","Education boards publish results schedule","Students can check dates on the official board websites.","نمونہ",190],
+["intl","عالمی رہنماؤں کا موسمیاتی تبدیلی پر مشترکہ بیان","World leaders issue joint statement on climate","The statement calls for faster cuts in emissions and more support for vulnerable countries.","نمونہ",40],
+["intl","تیل کی عالمی قیمتوں میں معمولی کمی","Global oil prices ease slightly","Analysts point to higher supply and softer demand forecasts.","نمونہ",95],
+["sports","قومی ٹیم کا ٹریننگ کیمپ لاہور میں شروع","National squad begins training camp in Lahore","The camp will run for ten days ahead of the upcoming series.","نمونہ",15],
+["sports","ڈومیسٹک سیزن کے میچز کا ٹائم ٹیبل سامنے آ گیا","Domestic season fixtures announced","The tournament opens next week with matches in four cities.","نمونہ",130],
+["ent","نئے ڈرامے کا پہلا ٹیزر ریلیز","First teaser of new drama released","The serial is set to air on weekday evenings from next month.","نمونہ",55],
+["ent","موسیقی کے فیسٹیول میں نامور فنکار شریک ہوں گے","Leading artists to join music festival","Organisers say tickets go on sale this weekend.","نمونہ",160],
+["biz","اسٹاک مارکیٹ میں تیزی، انڈیکس میں اضافہ","Stock market gains as index rises","Banking and energy shares led the session.","نمونہ",35],
+["biz","چھوٹے کاروبار کے لیے آسان قرضوں کی اسکیم","Easy loan scheme for small businesses","The scheme targets young entrepreneurs and home-based sellers.","نمونہ",210],
+["tech","مصنوعی ذہانت کے نئے ٹولز طلبہ میں مقبول","New AI tools grow popular among students","Universities are drafting guidelines on responsible use.","نمونہ",65],
+["tech","ملک میں 5G ٹیسٹنگ کا دائرہ بڑھانے کا اعلان","Wider 5G testing announced","Trials will extend to more cities in the coming months.","نمونہ",150],
+["health","موسم بدلنے پر نزلہ زکام سے بچاؤ کی ہدایات","Tips to avoid seasonal colds","Doctors recommend rest, fluids and handwashing.","نمونہ",85],
+["edu","اسکالرشپ کے لیے درخواستوں کی آخری تاریخ قریب","Scholarship application deadline nearing","Applicants should submit documents before the closing date.","نمونہ",175]
+];
+var S={l:"ur",t:null,c:"home",q:""};var REAL=false;
+function st(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function ss(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+var $=function(i){return document.getElementById(i)};
+function tx(k){return T[S.l][k]}
+function ago(m){if(m<2)return tx("now");if(m<60)return m+" "+tx("m");var h=Math.floor(m/60);return h+" "+tx("h")}
+function catName(id){for(var i=0;i<CATS.length;i++)if(CATS[i][0]==id)return S.l=="ur"?CATS[i][1]:CATS[i][2]}
+function title(a){return S.l=="ur"?a[1]:a[2]}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function card(a,i,big){var c=COL[a[0]];var im=a[7]?'<img class="img" style="object-fit:cover;width:100%" loading="lazy" alt="" src="'+esc(a[7])+'" onerror="this.style.display=\'none\'">':'<div class="img" style="--c1:'+c[0]+';--c2:'+c[1]+'">'+catName(a[0]).charAt(0)+'</div>';return '<article class="card'+(big?' big':'')+'">'+im+'<div class="cb"><span class="tag">'+catName(a[0])+'</span><h3>'+(a[6]?'<a href="'+esc(a[6])+'" target="_blank" rel="noopener" style="text-decoration:none">'+esc(title(a))+'</a>':esc(title(a)))+'</h3>'+(big||S.l=="en"?'<p class="sum">'+esc(a[3])+'</p>':'')+'<div class="meta"><span>'+tx("src")+': '+esc(a[4])+'</span><span>'+ago(a[5])+'</span></div><div class="share"><button data-s="wa" data-i="'+i+'">WhatsApp</button><button data-s="fb" data-i="'+i+'">Facebook</button><button data-s="x" data-i="'+i+'">X</button><button data-s="cp" data-i="'+i+'">'+tx("copy")+'</button></div></div></article>'}
+function list(){var q=S.q.toLowerCase();return A.map(function(a,i){return{a:a,i:i}}).filter(function(o){if(REAL&&o.a[8]!=S.l)return false;return !q||o.a[1].toLowerCase().indexOf(q)>-1||o.a[2].toLowerCase().indexOf(q)>-1})}
+function render(){
+ var h="",L=list();
+ if(!L.length){h='<div class="empty">'+tx("none")+'</div>'}
+ else if(S.c=="home"&&!S.q){
+  var top=L.slice().sort(function(x,y){return x.a[5]-y.a[5]}).slice(0,4);
+  h='<div class="hero">'+card(top[0].a,top[0].i,true)+'<div style="display:flex;flex-direction:column;gap:12px">'+top.slice(1).map(function(o){return card(o.a,o.i,false)}).join("")+'</div></div>';
+  CATS.slice(1).forEach(function(c){var items=L.filter(function(o){return o.a[0]==c[0]}).slice(0,3);if(!items.length)return;
+   h+='<div class="sec"><header><h2>'+(S.l=="ur"?c[1]:c[2])+'</h2><button class="more" data-go="'+c[0]+'">'+tx("more")+'</button></header><div class="grid">'+items.map(function(o){return card(o.a,o.i,false)}).join("")+'</div></div>'});
+ } else {
+  var f=L.filter(function(o){return S.c=="home"||o.a[0]==S.c});
+  h=f.length?'<div class="grid">'+f.map(function(o){return card(o.a,o.i,false)}).join("")+'</div>':'<div class="empty">'+tx("none")+'</div>';
+ }
+ $("main").innerHTML=h;
+ $("cats").innerHTML=CATS.map(function(c){return '<button data-go="'+c[0]+'" aria-current="'+(S.c==c[0])+'">'+(S.l=="ur"?c[1]:c[2])+'</button>'}).join("");
+ var sorted=A.map(function(a,i){return{a:a,i:i}}).filter(function(o){return !REAL||o.a[8]==S.l}).sort(function(x,y){return x.a[5]-y.a[5]});
+ $("tk").innerHTML=sorted.slice(0,6).map(function(o){return '<span>'+esc(title(o.a))+'</span>'}).join("");
+ $("pop").innerHTML=sorted.slice(0,5).map(function(o){return '<li>'+esc(title(o.a))+'</li>'}).join("");
+}
+var SOC=[["Facebook","f","#1877f2","https://facebook.com"],["X","X","#111","https://x.com"],["YouTube","▶","#ff0000","https://youtube.com"],["TikTok","♪","#010101","https://tiktok.com"],["Instagram","◎","#c13584","https://instagram.com"],["WhatsApp","W","#25d366","https://whatsapp.com/channel"],["Telegram","T","#2aabee","https://t.me"]];
+function soc(){var h=SOC.map(function(s){return '<a href="'+s[3]+'" target="_blank" rel="noopener" aria-label="'+s[0]+'"><i style="background:'+s[2]+'">'+s[1]+'</i>'+s[0]+'</a>'}).join("");$("soc").innerHTML=h;$("soc2").innerHTML=h}
+function applyLang(){
+ var u=S.l=="ur";document.documentElement.lang=S.l;document.documentElement.dir=u?"rtl":"ltr";document.body.className=u?"ur":"";
+ $("lang").textContent=u?"English":"اردو";
+ document.querySelectorAll("[data-i]").forEach(function(e){if(!e.dataset.s&&T[S.l][e.dataset.i]&&!e.closest("#main"))e.textContent=tx(e.dataset.i)});
+ $("q").placeholder=tx("search");$("em").placeholder=tx("email");
+ document.title=tx("logo");render()}
+function applyTheme(){
+ if(S.t){document.documentElement.setAttribute("data-theme",S.t)}else{document.documentElement.removeAttribute("data-theme")}
+ var dark=S.t?S.t=="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;
+ $("theme").textContent=dark?"☀️":"🌙"}
+function toast(m){var t=$("toast");t.textContent=m;t.className="on";setTimeout(function(){t.className=""},1800)}
+document.addEventListener("click",function(e){
+ var g=e.target.closest("[data-go]");if(g){S.c=g.dataset.go;render();window.scrollTo({top:0,behavior:"smooth"});return}
+ var b=e.target.closest("[data-s]");if(b){var a=A[b.dataset.i],t=encodeURIComponent(title(a)),u=encodeURIComponent(location.href.split("#")[0]);
+  if(b.dataset.s=="wa")window.open("https://wa.me/?text="+t+"%20"+u,"_blank","noopener");
+  if(b.dataset.s=="fb")window.open("https://www.facebook.com/sharer/sharer.php?u="+u,"_blank","noopener");
+  if(b.dataset.s=="x")window.open("https://x.com/intent/post?text="+t+"&url="+u,"_blank","noopener");
+  if(b.dataset.s=="cp"){try{navigator.clipboard.writeText(location.href).then(function(){toast(tx("copied"))},function(){toast(tx("copied"))})}catch(x){toast(tx("copied"))}}}
+});
+$("lang").onclick=function(){S.l=S.l=="ur"?"en":"ur";ss("lang",S.l);applyLang()};
+$("theme").onclick=function(){var dark=S.t?S.t=="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;S.t=dark?"light":"dark";ss("theme",S.t);applyTheme()};
+$("q").oninput=function(){S.q=this.value.trim();render()};
+$("sub").onclick=function(){if($("em").value.indexOf("@")>0){toast(tx("thanks"));$("em").value=""}};
+S.l=st("lang")||"ur";S.t=st("theme");
+soc();applyTheme();applyLang();
+fetch("news.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+ if(!d||!d.items||!d.items.length)return;
+ var now=Date.now();
+ A=d.items.map(function(n){return[n.cat,n.title,n.title,n.summary||"",n.source||"",Math.max(0,Math.round((now-new Date(n.date).getTime())/60000)),n.url,n.image||"",n.lang]});
+ REAL=true;$("note").style.display="none";render();
+}).catch(function(){});
+</script>
+</body>
+</html>
