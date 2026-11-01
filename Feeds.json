@@ -1,0 +1,21 @@
+[
+  { "source": "Dawn", "lang": "en", "cat": "auto", "fallback": "pakistan", "url": "https://www.dawn.com/feeds/home" },
+  { "source": "Express Tribune", "lang": "en", "cat": "pakistan", "url": "https://tribune.com.pk/feed/pakistan" },
+  { "source": "Express Tribune", "lang": "en", "cat": "intl", "url": "https://tribune.com.pk/feed/world" },
+  { "source": "Express Tribune", "lang": "en", "cat": "sports", "url": "https://tribune.com.pk/feed/sports" },
+  { "source": "Express Tribune", "lang": "en", "cat": "biz", "url": 
+"https://tribune.com.pk/feed/business" },
+  { "source": "Express Tribune", "lang": "en", "cat": "tech", "url": "https://tribune.com.pk/feed/technology" },
+  { "source": "BBC News", "lang": "en", "cat": "intl", "url": "https://feeds.bbci.co.uk/news/world/rss.xml" },
+  { "source": "BBC Sport", "lang": "en", "cat": "sports", "url": "https://feeds.bbci.co.uk/sport/rss.xml" },
+  { "source": "BBC News", "lang": "en", "cat": "biz", "url": "https://feeds.bbci.co.uk/news/business/rss.xml" },
+  { "source": "BBC News", "lang": "en", "cat": "tech", "url": "https://
+feeds.bbci.co.uk/news/technology/rss.xml" },
+  { "source": "BBC News", "lang": "en", "cat": "health", "url": "https://feeds.bbci.co.uk/news/health/rss.xml" },
+  { "source": "BBC News", "lang": "en", "cat": "ent", "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml" },
+  { "source": "BBC News", "lang": "en", "cat": "edu", "url": "https://feeds.bbci.co.uk/news/education/rss.xml" },
+  { "source": "بی بی سی اردو", "lang": "ur", "cat": "auto", "fallback": "national", "url": "https://feeds.bbci.co.uk/urdu/rss.xml" },
+  { "source": "ایکسپریس اردو", "lang": 
+"ur", "cat": "auto", "fallback": "pakistan", "url": "https://www.express.pk/feed/" },
+  { "source": "اے آر وائی اردو", "lang": "ur", "cat": "auto", "fallback": "national", "url": "https://urdu.arynews.tv/feed/" }
+]
