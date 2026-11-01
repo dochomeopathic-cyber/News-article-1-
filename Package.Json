@@ -1,0 +1,7 @@
+{
+  "name": "news-article-1",
+  "private": true,
+  "type": "module",
+  "scripts": { "update": "node fetch-news.mjs" },
+  "dependencies": { "rss-parser": "^3.13.0" }
+}
